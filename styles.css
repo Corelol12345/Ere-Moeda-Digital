@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +8,9 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #09122C; /* Cor principal do texto */
+    color: #09122C; 
 }
 
-/* Header */
 header {
     background: url('background.jpg') no-repeat center center/cover;
     color: #fff;
@@ -59,7 +57,6 @@ header .logo {
     z-index: 3;
 }
 
-/* Botão destaque */
 .btn-destaque {
     display: inline-block;
     padding: 10px 20px;
@@ -76,7 +73,6 @@ header .logo {
     transform: scale(1.1);
 }
 
-/* Layout de duas colunas */
 .container {
     display: flex;
     gap: 20px;
@@ -93,7 +89,6 @@ header .logo {
     flex: 3;
 }
 
-/* Menu Lateral */
 .menu-lateral {
     background-color: #fff;
     padding: 20px;
@@ -126,12 +121,10 @@ header .logo {
     color: #BE3144;
 }
 
-/* Conteúdo Oculto */
 .conteudo-oculto {
     display: none;
 }
 
-/* Seções */
 section {
     background-color: #fff;
     padding: 20px;
@@ -151,11 +144,10 @@ section p {
     color: #09122C;
 }
 
-/* Grid para imagens dos parceiros e quem ajudamos */
 .grid-container {
     display: grid;
-    object-fit: contain;  /* A imagem vai se ajustar completamente dentro da caixa */
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    object-fit: contain;  
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -163,10 +155,10 @@ section p {
 }
 
 .grid-container img {
-    width: 250px;  /* Largura fixa */
-    height: 180px; /* Altura fixa */
-    object-fit: contain;  /* A imagem vai se ajustar completamente dentro da caixa */
-    border-radius: 15px; /* Bordas arredondadas */
+    width: 250px; 
+    height: 180px; 
+    object-fit: contain;  
+    border-radius: 15px; 
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -178,20 +170,18 @@ section p {
     box-shadow: 0 0 15px rgba(135, 35, 65, 0.3);
 }
 
-/* Ajuste para a imagem do cartão de crédito */
 .cartaoImagem {
-    text-align: center; /* Centraliza a imagem */
+    text-align: center; 
     margin-top: 20px;
 }
 
 .cartaoImagem img {
-    width: 200px; /* Largura fixa */
-    height: auto;  /* Mantém a proporção */
+    width: 200px; 
+    height: auto;  
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Formulário */
 .formContainer {
     display: flex;
     gap: 20px;
@@ -234,7 +224,6 @@ section p {
     background-color: #872341;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -247,7 +236,6 @@ footer p {
     margin: 5px 0;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -258,11 +246,11 @@ footer p {
     }
 
     .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas menores */
+        grid-template-columns: repeat(1, 1fr); 
     }
 
     .grid-container img {
-        width: 100%;  /* Para ocupar toda a largura disponível */
+        width: 100%; 
         max-width: 250px;
         height: 180px;
     }
