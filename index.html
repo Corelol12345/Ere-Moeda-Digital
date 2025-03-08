@@ -3,52 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 1</title>
+    <title>Èrè Moeda Digital</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 <body>
     <header>
-        <section class="textoIntrodutorio">
-            
-            <article>
-                <p>A melhor moeda da atualidade !</p>    
-            </article>
-
-            <article>
-                <p>Èrè é a moeda digital mais recompensadora que você pode encontrar ! <br>
-                substitua nossa moeda digital por produtos de empresas parceiras. 
-                </p>
-            </article>
-
-        </section>
+        <img src="logo.png" alt="Logo Èrè" class="logo"> <!-- Logo no canto superior direito -->
+        <div class="header-content">
+            <h1>Èrè Moeda Digital</h1>
+            <p>A melhor moeda da atualidade!</p>
+            <a href="#compreAqui" class="btn-destaque">Comece Agora</a>
+        </div>
     </header>
 
-    <p>Parceiros</p>
-    <section class="imgParceiros">
-        <img src="./parceiros_1.jpeg" alt="">
-        <img src="./parceiros_2.jpeg" alt="">
-        <img src="./parceiros 3.jpeg" alt="">
-        <img src="./parceiros_4.jpeg" alt="">
-    </section>
+    <main>
+        <div class="container">
+            <!-- Coluna da Esquerda (Menu) -->
+            <div class="coluna-esquerda">
+                <div class="menu-lateral">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#quemSomos">Quem Somos</a></li>
+                        <li><a href="#nossaVisao">Nossa Visão</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#quemAjudamos">Quem Ajudamos</a></li>
+                        <li><a href="#compreAqui">Compre Moedas</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <section class="textoNescessitados">
-        <p>Além de garantir produtos com um preço muito mais barato, você ajuda<br>
-        nescessitados na Africa!
-        </p>
-    </section>
+            <!-- Coluna da Direita (Conteúdo) -->
+            <div class="coluna-direita">
+                <!-- Conteúdo inicial (pode ser uma mensagem de boas-vindas) -->
+                <section id="inicio">
+                    <h2>Bem-vindo ao Èrè Moeda Digital</h2>
+                    <p>Selecione uma opção no menu ao lado para ver mais informações.</p>
+                </section>
 
-    <section class="imgNescessitados">
-        <img src="./nescessitado_1.jpeg" alt="">
-        <img src="./nescessitados_2.jpeg" alt="">
-        <img src="./nescessitados_3.jpeg" alt="">
-        <img src="./nescessitados_4.jpeg" alt="">
-    </section>
+                <!-- Seção Quem Somos -->
+                <section id="quemSomos" class="conteudo-oculto">
+                    <h2>Quem Somos</h2>
+                    <p>Somos uma plataforma inovadora que oferece a moeda digital mais recompensadora do mercado.</p>
+                </section>
 
-    <section>
-        <a href="./paginaDeCompras.html">
-            <button>Compre aqui suas moedas</button>
-        </a>
-    </section>
+                <!-- Seção Nossa Visão -->
+                <section id="nossaVisao">
+                    <h2>Nossa Visão</h2>
+                    <p>Queremos transformar a forma como as pessoas interagem com moedas digitais, oferecendo benefícios para consumidores, parceiros e comunidades necessitadas.</p>
+                </section>
 
-    <footer>Todos os direitos reservados © <br> Produzido por Eduardo Pirolo & Marco Aurélio</footer>
+                <!-- Seção Parceiros -->
+                <section id="parceiros">
+                    <h2>Nossos Parceiros</h2>
+                    <div class="grid-container">
+                        <img src="./parceiros_1.jpeg" alt="Parceiro 1">
+                        <img src="./parceiros_2.jpeg" alt="Parceiro 2">
+                        <img src="./parceiros_3.jpeg" alt="Parceiro 3">
+                        <img src="./parceiros_4.jpeg" alt="Parceiro 4">
+                    </div>
+                </section>
+
+                <!-- Seção Quem Ajudamos -->
+                <section id="quemAjudamos">
+                    <h2>Quem Ajudamos</h2>
+                    <p>Além de garantir produtos com preços acessíveis, você ajuda comunidades necessitadas na África.</p>
+                    <div class="grid-container">
+                        <img src="./necessitados_1.png" alt="Necessitado 1">
+                        <img src="./necessitados_2.png" alt="Necessitado 2">
+                        <img src="./necessitados_3.png" alt="Necessitado 3">
+                        <img src="./necessitados_4.png" alt="Necessitado 4">
+                    </div>
+                </section>
+
+                <!-- Seção Compre Moedas (embaixo) -->
+                <section id="compreAqui">
+                    <h2>Compre Moedas</h2>
+                    <div class="formContainer">
+                        <div class="quantidadeMoedas">
+                            <label for="quantidade">Quantidade de Moedas:</label>
+                            <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                            <p>Total: <span id="total">R$ 10,00</span></p>
+                        </div>
+                        <div class="dadosPagamento">
+                            <form>
+                                <label for="nome">Nome no Cartão:</label>
+                                <input type="text" id="nome" name="nome" required>
+
+                                <label for="numero">Número do Cartão:</label>
+                                <input type="text" id="numero" name="numero" required>
+
+                                <label for="validade">Validade:</label>
+                                <input type="text" id="validade" name="validade" placeholder="MM/AA" required>
+
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv" required>
+
+                                <button type="submit">Finalizar Compra</button>
+                            </form>
+                            <div class="cartaoImagem">
+                                <img src="cartao.png" alt="Cartão de Crédito">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados ©</p>
+        <p>Produzido por Eduardo Pirolo & Marco Aurélio</p>
+    </footer>
 </body>
 </html>
