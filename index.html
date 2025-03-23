@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo Èrè" class="logo">
+        <img src="imagens/logo.png" alt="Logo Èrè" class="logo">
         <div class="header-content">
             <h1>Èrè Moeda Digital</h1>
             <p>A melhor moeda da atualidade!</p>
@@ -22,6 +22,7 @@
                 <div class="menu-lateral">
                     <h3>Menu</h3>
                     <ul>
+                        <li><a href="#inicio">Início</a></li>
                         <li><a href="#quemSomos">Quem Somos</a></li>
                         <li><a href="#nossaVisao">Nossa Visão</a></li>
                         <li><a href="#parceiros">Parceiros</a></li>
@@ -49,12 +50,12 @@
 
                 <section id="parceiros">
                     <h2>Nossos Parceiros</h2>
-                    <p>Empresar parceiras que nos ajudam a tornar esse projeto uma realidade.</p>
+                    <p>Empresas parceiras que nos ajudam a tornar esse projeto uma realidade.</p>
                     <div class="grid-container">
-                        <img src="./parceiros_1.jpeg" alt="Parceiro 1">
-                        <img src="./parceiros_2.jpeg" alt="Parceiro 2">
-                        <img src="./parceiros_3.jpeg" alt="Parceiro 3">
-                        <img src="./parceiros_4.jpeg" alt="Parceiro 4">
+                        <img src="imagens/parceiros_1.jpeg" alt="Parceiro 1">
+                        <img src="imagens/parceiros_2.jpeg" alt="Parceiro 2">
+                        <img src="imagens/parceiros_3.jpeg" alt="Parceiro 3">
+                        <img src="imagens/parceiros_4.jpeg" alt="Parceiro 4">
                     </div>
                 </section>
 
@@ -62,10 +63,10 @@
                     <h2>Quem Ajudamos</h2>
                     <p>Além de garantir produtos com preços acessíveis, você ajuda comunidades necessitadas na África.</p>
                     <div class="grid-container">
-                        <img src="./necessitados_1.png" alt="Necessitado 1">
-                        <img src="./necessitados_2.png" alt="Necessitado 2">
-                        <img src="./necessitados_3.png" alt="Necessitado 3">
-                        <img src="./necessitados_4.png" alt="Necessitado 4">
+                        <img src="imagens/necessitados_1.png" alt="Necessitado 1">
+                        <img src="imagens/necessitados_2.png" alt="Necessitado 2">
+                        <img src="imagens/necessitados_3.png" alt="Necessitado 3">
+                        <img src="imagens/necessitados_4.png" alt="Necessitado 4">
                     </div>
                 </section>
 
@@ -75,7 +76,7 @@
                         <div class="quantidadeMoedas">
                             <label for="quantidade">Quantidade de Moedas:</label>
                             <input type="number" id="quantidade" name="quantidade" min="1" value="1">
-                            <p>Total: <span id="total">R$ 10,00</span></p>
+                            <p>Total: <span id="total">R$ 1,50</span></p>
                         </div>
                         <div class="dadosPagamento">
                             <form>
@@ -94,7 +95,16 @@
                                 <button type="submit">Finalizar Compra</button>
                             </form>
                             <div class="cartaoImagem">
-                                <img src="cartao.png" alt="Cartão de Crédito">
+                                <div class="cartao">
+                                    <div class="frente">
+                                        <div class="numeroCartao">#### #### #### ####</div>
+                                        <div class="nomeCartao">NOME DO TITULAR</div>
+                                        <div class="validadeCartao">MM/AA</div>
+                                    </div>
+                                    <div class="verso">
+                                        <div class="cvvCartao">***</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -107,5 +117,7 @@
         <p>Todos os direitos reservados ©</p>
         <p>Produzido por Eduardo Pirolo & Marco Aurélio</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
