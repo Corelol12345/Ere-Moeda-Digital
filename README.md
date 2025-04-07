@@ -1,6 +1,6 @@
-# 🚀 **Èrè Moeda Digital - Versão de Testes Fase 3**
+# 🚀 **Èrè Moeda Digital - Validações Cartão Virtual**
 
-Bem-vindo à **Versão de Testes Fase 3** do projeto **Èrè Moeda Digital**!
+Bem-vindo à **Versão Fase 4** do projeto **Èrè Moeda Digital**!
 
 ---
 
